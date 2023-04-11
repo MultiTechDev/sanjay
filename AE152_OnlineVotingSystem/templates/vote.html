@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="w3-container">
+    <h2>Online Voting System</h2>
+    <p>Select Candidate & Vote</p>
+<form class="w3-container" action="" method="post" enctype="multipart/form-data">  
+    <table class="w3-table w3-striped w3-border">
+      <tr>
+        <th>Name of Candidate</th>
+        <th>Party Name</th>
+        <th>Vote</th>
+      </tr>
+      <tr>
+        <td>{{ c1 }}</td>
+        <td>{{ p1 }}</td>
+        <td><input class="w3-radio" type="radio" name="can" value="0"></td>
+      </tr>
+      <tr>
+        <td>{{ c2 }}</td>
+        <td>{{ p2 }}</td>
+        <td><input class="w3-radio" type="radio" name="can" value="1"></td>
+      </tr>
+      <tr>
+        <td>{{ c3 }}</td>
+        <td>{{ p3 }}</td>
+        <td><input class="w3-radio" type="radio" name="can" value="2"></td>
+      </tr>
+      <tr>
+        <td>{{ c4 }}</td>
+        <td>{{ p4 }}</td>
+        <td><input class="w3-radio" type="radio" name="can" value="3"></td>
+      </tr>
+    </table>
+    <br>
+    <div class="w3-container w3-center">
+        <input class="w3-btn w3-blue-grey " name="prediction" type="submit" value="Vote">
+    </div>
+   
+  </div>
+  <br>
+
+{% endblock %}

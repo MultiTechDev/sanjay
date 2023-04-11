@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="w3-row">
+<div class="w3-col s6">
+<div class="w3-card-4 w3-margin">
+
+  <header class="w3-container w3-blue">
+    <h1>Captured Face</h1>
+  </header>
+
+    <img src="static/images/test_image.jpg" alt="Alps" style="width: 100%">
+    <div class="w3-container w3-center">
+      <p>Real Time Face Recognition</p>
+     
+    </div>
+    <footer class="w3-container w3-blue">
+      <h5></h5>
+    </footer>
+
+  </div>
+</div>
+
+<div class="w3-col s6">
+  <div class="w3-card-4 w3-margin">
+
+    <header class="w3-container w3-blue">
+      <h1>Fill The Form</h1>
+    </header>
+  
+    <form class="w3-container" action="" method="post" enctype="multipart/form-data">
+      <label class="w3-text-teal"><b>First Name</b></label>
+      <input class="w3-input w3-border w3-light-grey" type="text" name='name' value="{{ name }}">
+    
+      <label class="w3-text-teal"><b>Adhar Number</b></label>
+      <input class="w3-input w3-border w3-light-grey" type="text" name='adhar' value="{{ adhar }}">
+    
+      <label class="w3-text-teal"><b>Voter ID</b></label>
+      <input class="w3-input w3-border w3-light-grey" type="text" name='voter' value="{{ voter }}">
+
+      <label class="w3-text-teal"><b>Contact Number(+91XXXXXXXXXX)</b></label>
+      <input class="w3-input w3-border w3-light-grey" type="text" name='contact' value="{{ contact }}">
+      <br>
+      <input class="w3-btn w3-blue-grey" name="prediction" type="submit" value="Register">
+      
+    </form>
+        <br>
+     
+      <footer class="w3-container w3-blue">
+        <h5></h5>
+      </footer>
+  
+    </div>
+  </div>
+
+  </div>
+
+  {% endblock %}

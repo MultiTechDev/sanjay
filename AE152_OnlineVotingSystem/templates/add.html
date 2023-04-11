@@ -1,0 +1,35 @@
+{% extends "adminlayout.html" %}
+{% block content %}
+
+
+<div class="w3-card-4 w3-margin">
+
+    <header class="w3-container w3-blue">
+      <h1>Add Candidate</h1>
+    </header>
+    
+    <form class="w3-container" action="" method="post" enctype="multipart/form-data">
+        <label class="w3-text-teal"><b>Candidate Name</b></label>
+        <input class="w3-input w3-border w3-light-grey" type="text" name='can' value="{{ username }}">
+      
+        <label class="w3-text-teal"><b>Party</b></label>
+        <input class="w3-input w3-border w3-light-grey" type="text" name='party' value="{{ password }}">
+      
+        <br>
+        <input class="w3-btn w3-blue-grey" name="login" type="submit" value="Add">
+        <input class="w3-btn w3-blue-grey" name="login" type="submit" value="Clear List">
+        
+      </form>
+
+    {% if error %}
+      <p class="error"><strong>Error:</strong> {{ error }}
+    {% endif %}
+    
+    <br>
+    <footer class="w3-container w3-blue">
+      <h5></h5>
+    </footer>
+    
+    </div>
+
+  {% endblock %}
